@@ -115,7 +115,7 @@ def slots_start(gambler):
 
         if end_string != "Y":
             break
-        db.update_gambler_balance(gambler.userID, gambler.get_balance())
+    db.update_gambler_balance(gambler.userID, gambler.get_balance())
     return gambler
 
 
