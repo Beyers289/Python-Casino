@@ -11,19 +11,6 @@ from game_logic.gambler import Gambler
 from game_logic.slots_logic import SlotsLogic
 from database import db
 
-"""
-TODO:
-1. Make other games so that the main game can access these games and when they are it goes back to the main game. Use a while loop while in that game 
-1. Make a Gambler Class so you can make indivual Gamblers with different starting balances
-2. Save these Gamblers into a Database
-3. Be able to log in via a User Name and Password
-4. Maybe at some point make a GUI for this
-5.WAY WAY DOWN THE LINE IT WOULD BE COOL TO MAKE A GAME WHERE YOU CAN PICK YOUR CASINO GAME SUCH AS BJ BACCARAT AND SLOTS and then CARRY YOUR BALANCE OVER to 
-EACH GAME
-
-"""
-
-
 def choice_login():
     username = input("Please enter your username: ")
     password = input("Please enter your password: ")
