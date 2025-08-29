@@ -37,22 +37,23 @@ A comprehensive command-line casino simulation featuring multiple gambling games
 The application uses SQLite with the following table structure:
 
 ### Users Table
-    ```sql
-   CREATE TABLE users (
+```sql
+CREATE TABLE users (
     ID INT PRIMARY KEY,
     username TEXT NOT NULL,
     password TEXT NOT NULL
 );
 ```
 ### Gamblers Table
-    ```sql
-   CREATE TABLE gamblers (
+```sql
+CREATE TABLE gamblers (
     user_ID INT,
     username TEXT NOT NULL,
     balance REAL
+
 ### Trigger create_gambler_after_user
-   '''sql
-   CREATE TRIGGER create_gambler_after_user
+'''sql
+CREATE TRIGGER create_gambler_after_user
 AFTER INSERT ON users
 FOR EACH ROW
 BEGIN
