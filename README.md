@@ -54,13 +54,13 @@ CREATE TABLE gamblers (
 ```
 
 ### Trigger create_gambler_after_user
-'''sql
+```sql
 CREATE TRIGGER create_gambler_after_user
 AFTER INSERT ON users
 FOR EACH ROW
 BEGIN
-    INSERT INTO gamblers (user_id, username)
-    VALUES (NEW.id, NEW.username, 0);
+    INSERT INTO gamblers (user_ID, username, balance)
+    VALUES (NEW.ID, NEW.username, 0);
 END;
 );
 ```
