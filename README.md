@@ -38,7 +38,7 @@ The application uses SQLite with the following table structure:
 
 ### Users Table
     TODO
-```
+
 
 ## 🎮 How to Play
 
