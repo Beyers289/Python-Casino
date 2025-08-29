@@ -50,6 +50,8 @@ CREATE TABLE gamblers (
     user_ID INT,
     username TEXT NOT NULL,
     balance REAL
+);
+```
 
 ### Trigger create_gambler_after_user
 '''sql
